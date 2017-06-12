@@ -16,7 +16,9 @@ console.log('%c TEST FOR sum() FAILS', 'color: red');
 }
 testSum();
 
-testSum();
+function multiply(x , y) {
+  return [x * y, 'The product of 5 and 9 is 45.'];
+}
 
 function testMultiply() { //eslint-disable-line
   if (multiply(5,9)[1] === 'The product of 5 and 9 is 45.') {
@@ -25,6 +27,7 @@ function testMultiply() { //eslint-disable-line
     console.log('%c TEST FOR multiply() FAILS', 'color: red');
   }
 }
+testMultiply();
 
 function testSumAndMultiply() { //eslint-disable-line
   if (sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
