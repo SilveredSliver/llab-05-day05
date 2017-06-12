@@ -14,6 +14,7 @@ console.log('%c TEST FOR sum() PASSES', 'color: green');
 console.log('%c TEST FOR sum() FAILS', 'color: red');
 }
 }
+testSum();
 
 testSum();
 
