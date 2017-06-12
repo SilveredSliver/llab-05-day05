@@ -29,6 +29,10 @@ function testMultiply() { //eslint-disable-line
 }
 testMultiply();
 
+function sumAndMultiply (x , y , z) {
+  return [x + y + z, x * y * z, '4 and 7 and 5 sum to 16.', 'The product of 4 and 7 and 5 is 140.'];
+}
+
 function testSumAndMultiply() { //eslint-disable-line
   if (sumAndMultiply(4, 7, 5)[2] === '4 and 7 and 5 sum to 16.' && sumAndMultiply(4, 7, 5)[3] === 'The product of 4 and 7 and 5 is 140.') {
     console.log('%c TEST FOR sumAndMultiply() PASSES', 'color: green');
@@ -36,6 +40,7 @@ function testSumAndMultiply() { //eslint-disable-line
     console.log('%c TEST FOR sumAndMultiply() FAILS', 'color: red');
   }
 }
+testSumAndMultiply();
 
 function testSumArray() { //eslint-disable-line
   if (sumArray(testArray)[1] === '2,3,4 was passed in as an array of numbers, and 9 is their sum.') {
